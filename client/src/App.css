@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6fdf9; /* very light green background */
+}
+
+/* Wrapper for list page */
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 15px;
+}
+
+/* Main card */
+.app-card {
+  width: 100%;
+  max-width: 900px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 128, 0, 0.08);
+  padding: 30px;
+}
+
+/* Header */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.app-header h2 {
+  margin: 0;
+  font-weight: 600;
+  color: #065f46; /* dark green */
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px !important;
+  padding: 8px 16px !important;
+  font-weight: 500;
+}
+
+/* Main green button */
+.btn-success {
+  background-color: #16a34a !important;  /* green */
+  border: none !important;
+}
+
+.btn-success:hover {
+  background-color: #15803d !important;
+}
+
+/* Delete button */
+.btn-danger {
+  background-color: #dc2626 !important;
+  border: none !important;
+}
+
+.btn-danger:hover {
+  background-color: #b91c1c !important;
+}
+
+/* Outline green button */
+.btn-outline-success {
+  border-color: #16a34a !important;
+  color: #16a34a !important;
+}
+
+.btn-outline-success:hover {
+  background-color: #16a34a !important;
+  color: white !important;
+}
+
+/* Table */
+.table {
+  margin-top: 10px;
+}
+
+.table thead {
+  background-color: #ecfdf5; /* light green header */
+}
+
+.table th {
+  font-weight: 600;
+  color: #065f46;
+}
+
+.table td {
+  vertical-align: middle;
+  color: #374151;
+}
+
+/* Action buttons */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+/* Forms */
+.form-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6fdf9;
+  padding: 20px;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 128, 0, 0.08);
+  padding: 30px;
+}
+
+/* Inputs */
+.form-control {
+  border-radius: 8px !important;
+  padding: 10px 12px !important;
+  border: 1px solid #d1fae5 !important;
+}
+
+.form-control:focus {
+  border-color: #16a34a !important;
+  box-shadow: 0 0 0 0.2rem rgba(22, 163, 74, 0.2) !important;
+}
+
+label {
+  font-weight: 500;
+  color: #065f46;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-card {
+    padding: 20px;
+  }
+
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
